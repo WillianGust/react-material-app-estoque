@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Box, Button, Container, CssBaseline, FormControl, Grid, Input, InputLabel, ThemeProvider, createTheme, makeStyles } from '@material-ui/core';
+import { Typography, Button, Container, FormControl, Grid, Input, InputLabel, makeStyles } from '@material-ui/core';
 import User from "../../models/User";
 
 const Login: React.FC = () => {
