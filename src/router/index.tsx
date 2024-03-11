@@ -5,6 +5,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import App from "../App";
+import AppTest from "../AppTest";
 // import App from "../App";
 
 const Router: React.FC = () => {
@@ -12,7 +14,7 @@ const Router: React.FC = () => {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login/>}/>
-      <Route path="/login" element={<Login/>}/>
+      <Route path="/app" element={<AppTest/>}/>
     </Routes>
     </BrowserRouter>
   )

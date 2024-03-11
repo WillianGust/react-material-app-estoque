@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Typography, Button, Container, FormControl, Grid, Input, InputLabel, makeStyles } from '@material-ui/core';
+import { Typography, Button, Container, FormControl, Grid, Input, InputLabel, makeStyles, Box } from '@material-ui/core';
 import User from "../../models/User";
+import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {
   const [user, setUser] = useState<User>({ email: '', password: '' });
@@ -43,8 +44,12 @@ const Login: React.FC = () => {
           </FormControl>
         </Grid>
       </Grid>
-      <Typography>{user.email}</Typography>
-      <Typography>{user.password}</Typography>
+      <Box display="flex" justifyContent="center" mt={1}>
+        <Link to="/app">
+          Signe up
+        </Link>
+      </Box>
+      {/* <h1>Hello 1</h1> */}
     </Container>
   )
 }
